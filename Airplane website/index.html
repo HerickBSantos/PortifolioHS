@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR" or "en-US">
+<body>
+    <div class="container">
+        <header>
+            
+            <div class="language-selector">
+                <label for="language-select">Idioma:</label>
+                <select id="language-select">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <h1>Informações de Modelos de Aviões</h1>
+                </select>
+            </div>
+        </header>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Informações de Aviões</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+        <main>
+            <div class="selector-container">
+                <label for="plane-model">Escolha um modelo de avião:</label>
+                <select id="plane-model">
+                    <option value="">Selecione...</option>
+                    <option value="boeing737">Boeing 737</option>
+                    <option value="airbusa320">Airbus A320</option>
+                    <option value="cessna172">Cessna 172</option>
+                    <option value="embraer190">Embraer 190</option>
+                    <option value="bombardierGlobal7500">Bombardier Global 7500</option>
+                    <option value="embraerPhenom300">Embraer Phenom 300</option>
+                    <option value="boeing747">Boeing 747</option>
+                    <option value="airbusa380">Airbus A380</option>
+                    <option value="cessnaCitation">Cessna Citation</option>
+                    <option value="piperPA28">Piper PA-28</option>
+                    <option value="gulfstreamG650">Gulfstream G650</option>
+                    <option value="dassaultFalcon8X">Dassault Falcon 8X</option>
+                    <option value="bombardierChallenger3500">Bombardier Challenger 3500</option>
+                    <option value="hondaJetElite">Honda Jet Elite</option>
+                    <option value="cirrusVisionJet">Cirrus Vision Jet</option>
+                    <option value="learjet75">Learjet 75</option>
+                    <option value="beechcraftKingAir350i">Beechcraft King Air 350i</option>
+                    <option value="piperM600">Piper M600</option>
+                    <option value="diamondDA62">Diamond DA62</option>
+                </select>
+                <button id="get-info-button">Obter Informações</button>
+            </div>
+            <div id="model-info" class="model-info">
+                <h2 id="info-title"></h2>
+                <div id="info-container"></div>
+                <img id="model-image" src="" alt="Imagem do Avião">
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

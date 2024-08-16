@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://wallpapersmug.com/download/1920x1080/2e0a0c/clouds-and-sunset-sea-of-clouds.jpg); /* Substitua pelo URL da sua imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position: center center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Mantém a imagem fixa */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Cor de fundo do conteúdo */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Topo Azul */
+
+header {
+  background-color: #0c38af; /* Cor do fundo do topo */
+  height: 100px;
+  color: #ffffff; /* Cor do texto do topo */
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.selector-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label { /* Seletor de Idioma */
+  padding: 40px;
+  font-weight: bold;
+  color: #ffffff; /* Cor do texto do seletor */
+  font-size: 20px;
+  line-height: 3.6
+}
+
+select {
+  margin-left: 0px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.model-info {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff; /* Cor de fundo das informações do modelo */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#info-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0c38af; /* Cor do título das informações do modelo */
+}
+
+#info-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

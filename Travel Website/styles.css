@@ -1,0 +1,327 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    padding-top: 0px; /* Altura da barra de navegação */
+    
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo com transparência */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Cor do texto */
+}
+
+.navbar-brand {
+    color: #fff; /* Cor da marca */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Cor do texto dos links */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Hero section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.webventure.com.br/wp-content/uploads/2020/01/AdobeStock_282264178-1024x683.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Cor do texto */
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.3s;
+}
+
+.hero .btn-primary {
+    background-color: #ffc107; /* Cor de fundo do botão */
+    border-color: #ffc107; /* Cor da borda do botão */
+    color: #343a40; /* Cor do texto do botão */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero .btn-primary:hover {
+    background-color: #343a40; /* Cor de fundo do botão ao passar o mouse */
+    border-color: #343a40; /* Cor da borda do botão ao passar o mouse */
+    color: #ffffff; /* Cor do texto do botão ao passar o mouse */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Destinos Section */
+.destinations {
+    padding: 5rem 0;
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+.destinations h2 {
+    padding: 80px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.destinations .destination {
+    padding: 1px;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.destinations .destination img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.destinations .destination:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destinations .destination h3 {
+    margin-top: 1.5rem; /* Espaço maior entre a imagem e o título */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.destinations .destination p {
+    margin-top: 1rem; /* Espaço maior entre o título e a descrição */
+    font-size: 1rem;
+}
+
+/* Planeje sua Viagem Section */
+.planning {
+    padding: 10rem 0;
+    background-color: #f8f9fa; /* Cor de fundo */
+}
+
+.planning h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.planning .card {
+    border: none;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planning .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.planning .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.planning .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.planning .card-text {
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 4rem 0;
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+.blog h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.blog .post {
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.blog .post img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog .post:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog .post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog .post-content {
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+/* Sobre Section */
+.about {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Cor de fundo */
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Contato Section */
+.contact {
+    padding: 4rem 0;
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+.contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #343a40; /* Cor de fundo do botão */
+    border: none;
+    color: #ffffff; /* Cor do texto do botão */
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #555555; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Cor de fundo do footer */
+    color: #ffffff; /* Cor do texto do footer */
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations (AOS library) */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
